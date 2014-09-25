@@ -36,6 +36,7 @@
 			$stats = array();
 			
                         $query = query(sprintf("SELECT *, `id` AS `thread_id`,
+				`subject` AS `thread_subject`,
 				(SELECT COUNT(`id`) FROM ``posts_%s`` WHERE `thread` = `thread_id`) AS `reply_count`,
 				(SELECT SUM(`num_files`) FROM ``posts_%s`` WHERE `thread` = `thread_id` AND `num_files` IS NOT NULL) AS `image_count`,
 				'%s' AS `board` FROM ``posts_%s`` WHERE `thread`  IS NULL ORDER BY `bump` DESC",
