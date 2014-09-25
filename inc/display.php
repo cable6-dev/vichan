@@ -66,7 +66,7 @@ function createBoardlist($mod=false) {
 	$top = "<script type='text/javascript'>if (typeof do_boardlist != 'undefined') do_boardlist();</script>";
 	
 	return array(
-		'top' => '<div class="boardlist">' . $body . '</div>' . $top,
+		'top' => '<div class="boardlist top">' . $body . '</div>' . $top,
 		'bottom' => '<div class="boardlist bottom">' . $body . '</div>'
 	);
 }
