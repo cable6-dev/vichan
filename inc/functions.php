@@ -1704,13 +1704,6 @@ function markup(&$body, $track_cites = false) {
 	if (mysql_version() < 50503)
 		$body = mb_encode_numericentity($body, array(0x010000, 0xffffff, 0, 0xffffff), 'UTF-8');
 
-	foreach ($config['markup'] as $markup) {
-		if (is_string($markup[1])) {
-			$body = preg_replace($markup[0], $markup[1], $body);
-		} elseif (is_callable($markup[1])) {
-			$body = preg_replace_callback($markup[0], $markup[1], $body);
-		}
-	}
 
 	if ($config['markup_urls']) {
 		$markup_urls = array();
@@ -1725,7 +1718,15 @@ function markup(&$body, $track_cites = false) {
 		if ($num_links > $config['max_links'])
 			error($config['error']['toomanylinks']);
 	}
-	
+
+        foreach ($config['markup'] as $markup) {
+                if (is_string($markup[1])) {
+                        $body = preg_replace($markup[0], $markup[1], $body);
+                } elseif (is_callable($markup[1])) {
+                        $body = preg_replace_callback($markup[0], $markup[1], $body);
+                }
+        }
+
 	if ($config['markup_repair_tidy'])
 		$body = str_replace('  ', ' &nbsp;', $body);
 
