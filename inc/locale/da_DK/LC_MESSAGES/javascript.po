@@ -4,13 +4,14 @@
 # 
 # Translators:
 # sildeperker <nicholas.adam.wood@gmail.com>, 2014
+# Vladislav Višnevskij Petersen <vladikpetersen@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: vichan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-21 20:55+0200\n"
-"PO-Revision-Date: 2014-06-21 18:56+0000\n"
-"Last-Translator: Marcin Łabanowski <marcin@6irc.net>\n"
+"POT-Creation-Date: 2014-09-21 04:38+0200\n"
+"PO-Revision-Date: 2014-09-21 19:42+0000\n"
+"Last-Translator: Vladislav Višnevskij Petersen <vladikpetersen@gmail.com>\n"
 "Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/tinyboard-vichan-devel/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../../../../js/style-select.js:40 ../../../../js/style-select.js:41
 msgid "Style: "
-msgstr "Stil"
+msgstr "Stil:"
 
 #: ../../../../js/hide-images.js:50 ../../../../js/upload-selection.js:51
 #: ../../../../js/quick-post-controls.js:30 ../../../../js/hide-images.js:51
@@ -44,6 +45,8 @@ msgstr "vis"
 #: ../../../../js/toggle-locked-threads.js:55
 #: ../../../../js/toggle-locked-threads.js:41
 #: ../../../../js/toggle-locked-threads.js:56
+#: ../../../../js/toggle-locked-threads.js:53
+#: ../../../../js/toggle-locked-threads.js:70
 msgid "Show locked threads"
 msgstr "Vis låste tråde"
 
@@ -53,6 +56,9 @@ msgstr "Vis låste tråde"
 #: ../../../../js/toggle-locked-threads.js:55
 #: ../../../../js/toggle-locked-threads.js:41
 #: ../../../../js/toggle-locked-threads.js:56
+#: ../../../../js/toggle-locked-threads.js:44
+#: ../../../../js/toggle-locked-threads.js:53
+#: ../../../../js/toggle-locked-threads.js:70
 msgid "Hide locked threads"
 msgstr "Skjul låste tråde"
 
@@ -64,7 +70,7 @@ msgstr "URL"
 #: ../../../../js/upload-selection.js:50 ../../../../js/upload-selection.js:60
 #: ../../../../js/upload-selection.js:68
 msgid "Select"
-msgstr ""
+msgstr "Vælg"
 
 #: ../../../../js/upload-selection.js:53 ../../../../js/upload-selection.js:63
 #: ../../../../js/upload-selection.js:71
@@ -82,16 +88,19 @@ msgid "Oekaki"
 msgstr "Oekaki"
 
 #: ../../../../js/toggle-images.js:41 ../../../../js/toggle-images.js:42
+#: ../../../../js/toggle-images.js:45
 msgid "hidden"
-msgstr "Skjult"
+msgstr "skjult"
 
 #: ../../../../js/toggle-images.js:57 ../../../../js/toggle-images.js:70
 #: ../../../../js/toggle-images.js:58 ../../../../js/toggle-images.js:71
+#: ../../../../js/toggle-images.js:86
 msgid "Show images"
 msgstr "Vis billeder"
 
 #: ../../../../js/toggle-images.js:57 ../../../../js/toggle-images.js:70
 #: ../../../../js/toggle-images.js:58 ../../../../js/toggle-images.js:71
+#: ../../../../js/toggle-images.js:63 ../../../../js/toggle-images.js:86
 msgid "Hide images"
 msgstr "Skjul billeder"
 
@@ -125,10 +134,12 @@ msgid "Click reply to view."
 msgstr "Klik svar for at vise"
 
 #: ../../../../js/expand.js:20 ../../../../js/expand.js:22
+#: ../../../../js/live-index.js:72 ../../../../js/live-index.js:83
 msgid "Click to expand"
 msgstr "Klik for at udvide"
 
 #: ../../../../js/expand.js:44 ../../../../js/expand.js:46
+#: ../../../../js/expand.js:50
 msgid "Hide expanded replies"
 msgstr "Skjul udvidede svar"
 
@@ -138,7 +149,7 @@ msgstr "Penselstørrelse"
 
 #: ../../../../js/oekaki.js:10
 msgid "Set text"
-msgstr ""
+msgstr "Sæt tekst"
 
 #: ../../../../js/oekaki.js:10
 msgid "Clear"
@@ -162,11 +173,11 @@ msgstr "Læs farve"
 
 #: ../../../../js/oekaki.js:11
 msgid "Fill"
-msgstr ""
+msgstr "Fyld"
 
 #: ../../../../js/oekaki.js:12
 msgid "Use oekaki instead of file?"
-msgstr "Brug oekaki istedet for fil?"
+msgstr "Brug oekaki i stedet for fil?"
 
 #: ../../../../js/oekaki.js:21
 msgid "Edit in oekaki"
@@ -184,19 +195,22 @@ msgstr "Vælg skrifttype eller lad stå tomt"
 #: ../../../../js/forced-anon.js:69 ../../../../js/forced-anon.js:60
 #: ../../../../js/forced-anon.js:66 ../../../../js/forced-anon.js:70
 #: ../../../../js/forced-anon.js:61 ../../../../js/forced-anon.js:67
-#: ../../../../js/forced-anon.js:71
+#: ../../../../js/forced-anon.js:71 ../../../../js/forced-anon.js:73
+#: ../../../../js/forced-anon.js:81 ../../../../js/forced-anon.js:85
 msgid "Forced anonymity"
 msgstr "Tvungen anonymitet"
 
 #: ../../../../js/forced-anon.js:59 ../../../../js/forced-anon.js:65
 #: ../../../../js/forced-anon.js:60 ../../../../js/forced-anon.js:66
 #: ../../../../js/forced-anon.js:61 ../../../../js/forced-anon.js:67
+#: ../../../../js/forced-anon.js:73 ../../../../js/forced-anon.js:81
 msgid "enabled"
 msgstr "aktiveret"
 
 #: ../../../../js/forced-anon.js:59 ../../../../js/forced-anon.js:69
 #: ../../../../js/forced-anon.js:60 ../../../../js/forced-anon.js:70
 #: ../../../../js/forced-anon.js:61 ../../../../js/forced-anon.js:71
+#: ../../../../js/forced-anon.js:73 ../../../../js/forced-anon.js:85
 msgid "disabled"
 msgstr "deaktiveret"
 
@@ -255,12 +269,12 @@ msgstr "Hurtigt svar"
 #: ../../../../js/quick-reply-old.js:35
 #, python-brace-format
 msgid "Posting mode: Replying to <small>&gt;&gt;{0}</small>"
-msgstr "Post tilstand: Svar til <small>&gt:&gt;{0}</small>"
+msgstr "Indlægstype: Svar til <small>&gt:&gt;{0}</small>"
 
 #: ../../../../js/quick-reply.js:33 ../../../../js/quick-reply-old.js:33
 #: ../../../../js/quick-reply-old.js:35
 msgid "Return"
-msgstr ""
+msgstr "Tilbage"
 
 #: ../../../../js/expand-all-images.js:20
 #: ../../../../js/expand-all-images.js:21
@@ -282,6 +296,8 @@ msgstr "{0} brugere"
 #: ../../../../templates/themes/ukko/ukko.js:39
 #: ../../../../templates/themes/ukko/ukko.js:29
 #: ../../../../templates/themes/ukko/ukko.js:40
+#: ../../../../templates/themes/ukko/ukko.js:52
+#: ../../../../templates/themes/ukko/ukko.js:63
 msgid "(hide threads from this board)"
 msgstr "(skjul tråde fra dette board)"
 
@@ -289,16 +305,20 @@ msgstr "(skjul tråde fra dette board)"
 #: ../../../../templates/themes/ukko/ukko.js:44
 #: ../../../../templates/themes/ukko/ukko.js:33
 #: ../../../../templates/themes/ukko/ukko.js:45
+#: ../../../../templates/themes/ukko/ukko.js:56
+#: ../../../../templates/themes/ukko/ukko.js:68
 msgid "(show threads from this board)"
 msgstr "(vis tråde fra dette board)"
 
 #: ../../../../templates/themes/ukko/ukko.js:57
 #: ../../../../templates/themes/ukko/ukko.js:58
+#: ../../../../templates/themes/ukko/ukko.js:81
 msgid "No more threads to display"
 msgstr "Ikke flere tråde at vise"
 
 #: ../../../../templates/themes/ukko/ukko.js:79
 #: ../../../../templates/themes/ukko/ukko.js:80
+#: ../../../../templates/themes/ukko/ukko.js:103
 msgid "Loading..."
 msgstr "Indlæser..."
 
@@ -309,7 +329,7 @@ msgstr "Gem under oprindelige filnavn"
 
 #: ../../../../js/ajax-post-controls.js:43
 msgid "Reported post(s)."
-msgstr "Anmeldte post(s)."
+msgstr "Anmeldte indlæg."
 
 #: ../../../../js/ajax-post-controls.js:53
 msgid "An unknown error occured!"
@@ -325,19 +345,19 @@ msgstr "Arbjeder..."
 
 #: ../../../../js/ajax.js:42 ../../../../js/ajax.js:45
 msgid "Posting... (#%)"
-msgstr "Poster... (#%)"
+msgstr "Lægger ind... (#%)"
 
 #: ../../../../js/ajax.js:104 ../../../../js/ajax.js:109
 msgid "Posted..."
-msgstr "Postet..."
+msgstr "Lagt ind..."
 
 #: ../../../../js/ajax.js:106 ../../../../js/ajax.js:111
 msgid "An unknown error occured when posting!"
-msgstr ""
+msgstr "En ukendt fejl opstod ved indlægning!"
 
 #: ../../../../js/ajax.js:130 ../../../../js/ajax.js:135
 msgid "Posting..."
-msgstr "Poster..."
+msgstr "Lægger ind..."
 
 #: ../../../../js/quick-reply.js:223 ../../../../js/quick-reply.js:224
 #: ../../../../js/quick-reply.js:225
@@ -347,28 +367,31 @@ msgstr "Upload URL"
 #: ../../../../js/quick-reply.js:266 ../../../../js/quick-reply.js:267
 #: ../../../../js/quick-reply.js:268
 msgid "Spoiler Image"
-msgstr ""
+msgstr "Skjul Billede"
 
 #: ../../../../js/quick-reply.js:277 ../../../../js/quick-reply.js:278
-#: ../../../../js/quick-reply.js:279
+#: ../../../../js/quick-reply.js:279 ../../../../js/quick-reply.js:281
 msgid "Comment"
 msgstr "Kommentar"
 
 #: ../../../../js/quick-reply.js:285 ../../../../js/quick-reply.js:406
 #: ../../../../js/quick-reply.js:286 ../../../../js/quick-reply.js:407
 #: ../../../../js/quick-reply.js:287 ../../../../js/quick-reply.js:408
+#: ../../../../js/quick-reply.js:289 ../../../../js/quick-reply.js:410
 msgid "Quick Reply"
 msgstr "Hurtigt Svar"
 
 #: ../../../../js/watch.js:249 ../../../../js/watch.js:250
 #: ../../../../js/watch.js:288 ../../../../js/watch.js:289
 #: ../../../../js/watch.js:330 ../../../../js/watch.js:331
+#: ../../../../js/watch.js:361 ../../../../js/watch.js:362
 msgid "Stop watching this thread"
 msgstr "Stop med at følge denne tråd"
 
 #: ../../../../js/watch.js:249 ../../../../js/watch.js:250
 #: ../../../../js/watch.js:288 ../../../../js/watch.js:289
 #: ../../../../js/watch.js:330 ../../../../js/watch.js:331
+#: ../../../../js/watch.js:361 ../../../../js/watch.js:362
 msgid "Watch this thread"
 msgstr "Følg tråd"
 
@@ -376,7 +399,8 @@ msgstr "Følg tråd"
 #: ../../../../js/watch.js:269 ../../../../js/watch.js:299
 #: ../../../../js/watch.js:300 ../../../../js/watch.js:308
 #: ../../../../js/watch.js:341 ../../../../js/watch.js:342
-#: ../../../../js/watch.js:350
+#: ../../../../js/watch.js:350 ../../../../js/watch.js:372
+#: ../../../../js/watch.js:373 ../../../../js/watch.js:381
 msgid "Unpin this board"
 msgstr "Frigør dette board"
 
@@ -384,7 +408,8 @@ msgstr "Frigør dette board"
 #: ../../../../js/watch.js:269 ../../../../js/watch.js:299
 #: ../../../../js/watch.js:300 ../../../../js/watch.js:308
 #: ../../../../js/watch.js:341 ../../../../js/watch.js:342
-#: ../../../../js/watch.js:350
+#: ../../../../js/watch.js:350 ../../../../js/watch.js:372
+#: ../../../../js/watch.js:373 ../../../../js/watch.js:381
 msgid "Pin this board"
 msgstr "Fastgør dette board"
 
@@ -392,7 +417,8 @@ msgstr "Fastgør dette board"
 #: ../../../../js/watch.js:268 ../../../../js/watch.js:301
 #: ../../../../js/watch.js:306 ../../../../js/watch.js:307
 #: ../../../../js/watch.js:343 ../../../../js/watch.js:348
-#: ../../../../js/watch.js:349
+#: ../../../../js/watch.js:349 ../../../../js/watch.js:374
+#: ../../../../js/watch.js:379 ../../../../js/watch.js:380
 msgid "Stop watching this board"
 msgstr "Stop med at følge dette board"
 
@@ -400,7 +426,8 @@ msgstr "Stop med at følge dette board"
 #: ../../../../js/watch.js:268 ../../../../js/watch.js:301
 #: ../../../../js/watch.js:306 ../../../../js/watch.js:307
 #: ../../../../js/watch.js:343 ../../../../js/watch.js:348
-#: ../../../../js/watch.js:349
+#: ../../../../js/watch.js:349 ../../../../js/watch.js:374
+#: ../../../../js/watch.js:379 ../../../../js/watch.js:380
 msgid "Watch this board"
 msgstr "Følg dette board"
 
@@ -558,34 +585,136 @@ msgstr "[afspil en gang]"
 msgid "[loop]"
 msgstr "[gentag]"
 
-#: ../../../../js/webm-settings.js:42
+#: ../../../../js/webm-settings.js:42 ../../../../js/webm-settings.js:45
 msgid "WebM Settings"
 msgstr "WebM indstillinger"
 
-#: ../../../../js/webm-settings.js:44
+#: ../../../../js/webm-settings.js:44 ../../../../js/webm-settings.js:54
 msgid "Expand videos inline"
-msgstr ""
+msgstr "Indlejr videoer"
 
-#: ../../../../js/webm-settings.js:45
+#: ../../../../js/webm-settings.js:45 ../../../../js/webm-settings.js:55
 msgid "Play videos on hover"
 msgstr "Afspil videoer når musen føres over dem"
 
-#: ../../../../js/webm-settings.js:46
+#: ../../../../js/webm-settings.js:46 ../../../../js/webm-settings.js:56
 msgid "Default volume"
 msgstr "Standard lydstyrke"
 
 #: ../../../../js/treeview.js:18
 msgid "Tree view"
-msgstr ""
+msgstr "Trævisning"
 
 #: ../../../../js/expand-all-images.js:32
 msgid "Shrink all images"
-msgstr ""
+msgstr "Skrump alle billeder"
 
-#: ../../../../js/no-animated-gif.js:33
+#: ../../../../js/no-animated-gif.js:33 ../../../../js/no-animated-gif.js:37
 msgid "Animate GIFs"
-msgstr ""
+msgstr "Animér GIF-billeder"
 
 #: ../../../../js/no-animated-gif.js:42 ../../../../js/no-animated-gif.js:48
+#: ../../../../js/no-animated-gif.js:47 ../../../../js/no-animated-gif.js:57
+#: ../../../../js/no-animated-gif.js:62
 msgid "Unanimate GIFs"
-msgstr ""
+msgstr "Hold op med at animere GIF-billeder"
+
+#: ../../../../js/webm-settings.js:41
+msgid "WebM"
+msgstr "WebM"
+
+#: ../../../../js/live-index.js:25 ../../../../js/live-index.js:84
+msgid "No new posts."
+msgstr "Ingen nye indlæg."
+
+#: ../../../../js/live-index.js:30 ../../../../js/live-index.js:73
+msgid "No new threads."
+msgstr "Ingen nye tråde."
+
+#: ../../../../js/live-index.js:72
+#, python-brace-format
+msgid "There are {0} new threads."
+msgstr "Der er {0} nye tråde."
+
+#: ../../../../js/live-index.js:83
+#, python-brace-format
+msgid "There are {0} new posts in this thread."
+msgstr "Der er {0} nye indlæg i denne tråd."
+
+#: ../../../../js/options.js:106
+msgid "Options"
+msgstr "Indstillinger"
+
+#: ../../../../js/options/general.js:15
+msgid "General"
+msgstr "Generelt"
+
+#: ../../../../js/options/general.js:18
+msgid "Storage: "
+msgstr "Oplagring:"
+
+#: ../../../../js/options/general.js:21
+msgid "Export"
+msgstr "Eksportér"
+
+#: ../../../../js/options/general.js:27
+msgid "Import"
+msgstr "Importér"
+
+#: ../../../../js/options/general.js:28
+msgid "Paste your storage data"
+msgstr "Indsæt dit oplagrede data"
+
+#: ../../../../js/options/general.js:40
+msgid "Erase"
+msgstr "Udvisk"
+
+#: ../../../../js/options/general.js:41
+msgid ""
+"Are you sure you want to erase your storage? This involves your hidden "
+"threads, watched threads, post password and many more."
+msgstr "Er du sikker på at du vil udviske din oplagring? Dette omfatter dine skjulte tråde, fulgte tråde, indlægskodeord og meget mere."
+
+#: ../../../../js/options/user-css.js:14
+msgid "User CSS"
+msgstr "Bruger-CSS"
+
+#: ../../../../js/options/user-css.js:23
+msgid "Update custom CSS"
+msgstr "Opdatér brugerdefineret CSS"
+
+#: ../../../../js/options/user-css.js:45
+msgid "Enter here your own CSS rules..."
+msgstr "Skriv dine egne CSS regler hér..."
+
+#: ../../../../js/options/user-css.js:46
+msgid ""
+"If you want to make a redistributable style, be sure to\n"
+"   have a Yotsuba B theme selected."
+msgstr "Hvis du ønsker at lave en videredistribuerbar stil, vær\nsikker på at have et Yotsuba B-tema valgt."
+
+#: ../../../../js/options/user-css.js:47
+msgid "You can include CSS files from remote servers, for example:"
+msgstr "Du kan bruge CSS-filer fra andre servere, for eksempel:"
+
+#: ../../../../js/options/user-js.js:14
+msgid "User JS"
+msgstr "Bruger-JS"
+
+#: ../../../../js/options/user-js.js:23
+msgid "Update custom Javascript"
+msgstr "Opdatér brugerdefineret Javascript"
+
+#: ../../../../js/options/user-js.js:54
+msgid "Enter here your own Javascript code..."
+msgstr "Skriv din egen Javascript-kode hér..."
+
+#: ../../../../js/options/user-js.js:55
+msgid ""
+"Have a backup of your storage somewhere, as messing here\n"
+"   may render you this website unusable."
+msgstr "Hav en backup af dit oplargring et sted, da at rode hér kan\ngøre den her webside uanvendelig for dig."
+
+#: ../../../../js/options/user-js.js:56
+msgid "You can include JS files from remote servers, for example:"
+msgstr "Du kan bruge JS-filer fra andre servere, for eksempel:"

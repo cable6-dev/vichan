@@ -2,14 +2,21 @@
  * no-animated-gif.js - Toggle GIF animated thumbnails when gifsicle is enabled
  *
  * Copyright (c) 2014 Fredrick Brennan <admin@8chan.co>
+ * Copyright (c) 2014 Marcin Łabanowski <marcin@6irc.net>
  *
  * Usage:
  *   $config['additional_javascript'][] = 'js/jquery.min.js';
+ *   //$config['additional_javascript'][] = 'js/options.js';
+ *   //$config['additional_javascript'][] = 'js/style-select.js';
+ *   //$config['additional_javascript'][] = 'js/options/general.js';
  *   $config['additional_javascript'][] = 'js/no-animated-gif.js';
  */
 
 function unanimate_gif(e) {
-	var c = $('<canvas class="post-image"></canvas>');
+	if (active_page === "catalog")
+		var c = $('<canvas class="thread-image"></canvas>');
+	else
+		var c = $('<canvas class="post-image"></canvas>');
 	$(e).parent().prepend(c);
 	c.attr('width', $(e).width());
 	c.attr('height',$(e).height());
@@ -28,9 +35,10 @@ function unanimate_gif(e) {
 }
 
 function no_animated_gif() {
-	var anim_gifs = $('img.post-image[src$=".gif"]');
+	var anim_gifs = $('img.post-image[src$=".gif"], img.thread-image[src$=".gif"]');
 	localStorage.no_animated_gif = true;
 	$('#no-animated-gif>a').text(_('Animate GIFs'));
+	$('#no-animated-gif>input').prop('checked', true);
 
 	$.each(anim_gifs, function(i, e) {unanimate_gif(e)} );
 }
@@ -40,14 +48,24 @@ function animated_gif() {
 	$('img.post-image').removeClass("unanimated").show();
 	localStorage.no_animated_gif = false;
 	$('#no-animated-gif>a').text(_('Unanimate GIFs'));
-	
+	$('#no-animated-gif>input').prop('checked', false);	
 }
 
-if (active_page == 'thread' || active_page == 'index' || active_page == 'ukko') {
-	onready(function(){
-		$('hr:first').before('<div id="no-animated-gif" style="text-align:right"><a class="unimportant" href="javascript:void(0)">'+_('Unanimate GIFs')+'</a></div>')
+if (active_page == 'thread' || active_page == 'index' || active_page == 'ukko' || active_page == 'catalog') {
+	$(function(){
+		var selector, event;
+		if (window.Options && Options.get_tab('general')) {
+			selector = '#no-animated-gif>input';
+			event = 'change';
+			Options.extend_tab("general", "<label id='no-animated-gif'><input type='checkbox' /> "+_('Unanimate GIFs')+"</label>");
+		}
+		else {
+			selector = '#no-animated-gif';
+			event = 'click';
+			$('hr:first').before('<div id="no-animated-gif" style="text-align:right"><a class="unimportant" href="javascript:void(0)">'+_('Unanimate GIFs')+'</a></div>')
+		}
 
-		$('#no-animated-gif').on('click', function() {
+		$(selector).on(event, function() {
 			if (localStorage.no_animated_gif === 'true') {
 				animated_gif();
 			} else {
@@ -56,6 +74,6 @@ if (active_page == 'thread' || active_page == 'index' || active_page == 'ukko') 
 		});
 
 		if (localStorage.no_animated_gif === 'true')
-			$(document).ready(no_animated_gif);
+			no_animated_gif();
 	});
 }
